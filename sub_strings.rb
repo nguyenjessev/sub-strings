@@ -1,13 +1,13 @@
 def substrings(text, dictionary)
+  result = Hash.new(0)
+  lowered_text = text.downcase
 
-  # Create an empty hash
+  dictionary.each do |word|
+    matches = lowered_text.scan(word).length
+    result[word] = matches unless matches == 0
+  end
 
-  # Loop through words in the dictionary
-
-  # Scan text for occurrences, add values to hash
-
-  # Return hash
-
+  return result
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
