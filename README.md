@@ -12,3 +12,6 @@ Create a method that accepts a string and a dictionary array, then counts each o
 
 ## What I used
 Ruby arrays, hashes, and string methods
+
+## What I learned
+How to iterate over an array, create a hash, and modify a hash
